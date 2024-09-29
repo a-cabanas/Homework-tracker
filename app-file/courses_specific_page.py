@@ -2,10 +2,11 @@ import streamlit as st
 
 def app():
     course = st.session_state.get("selected_course", "Course")
-    st.title(f"{course} Page")
+    st.title(f"{course} Page 📓")
 
-    # Add any specific content or functionality for the course page here
+    # Adding any specific content or functionality for the course page here
     st.write(f"Welcome to the {course} page.")
+    st.write(f"Check our your assignments below!")
 
     # Add a navigation link back to the courses or main app
     page = st.selectbox("Choose a page", ["Course Page", "Courses", "Main App"])
