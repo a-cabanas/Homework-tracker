@@ -6,7 +6,7 @@ def main():
         st.session_state.current_page = "Home 🏠"
 
     st.sidebar.title("Navigation")
-    page = st.sidebar.selectbox("Choose a page", [Home 🏠", "Courses 📚", "Course Page 📘"])
+    page = st.sidebar.selectbox("Choose a page", ["Home 🏠", "Courses 📚", "Course Page 📘"])
 
     st.session_state.current_page = page
 
