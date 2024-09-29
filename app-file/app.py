@@ -143,3 +143,5 @@ def app():
                 # Add the event to the list of events for the selected date
                 add_event(selected_date, new_event, new_event_tags)
                 st.success("Event added successfully")
+    st.divider() ## line divider
+    st.write("AI Helper!")
