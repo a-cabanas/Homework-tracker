@@ -3,20 +3,20 @@ import streamlit as st
 
 def main():
     if "current_page" not in st.session_state:
-        st.session_state.current_page = "Main App"
+        st.session_state.current_page = "Home 🏠"
 
     st.sidebar.title("Navigation")
-    page = st.sidebar.selectbox("Choose a page", ["Main App", "Courses", "Course Page"])
+    page = st.sidebar.selectbox("Choose a page", [Home 🏠", "Courses 📚", "Course Page 📘"])
 
     st.session_state.current_page = page
 
-    if st.session_state.current_page == "Main App":
+    if st.session_state.current_page == "Home 🏠":
         from app import app
         app()
-    elif st.session_state.current_page == "Courses":
+    elif st.session_state.current_page == "Courses 📚":
         from courses import app
         app()
-    elif st.session_state.current_page == "Course Page":
+    elif st.session_state.current_page == "Course Page 📘":
         from courses_specific_page import app
         app()
 
