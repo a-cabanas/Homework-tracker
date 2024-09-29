@@ -1,9 +1,8 @@
-from streamlit_tags import st_tags, st_tags_sidebar
-
 import datetime
 from datetime import datetime as dt
 import streamlit as st
 import streamlit_calendar as st_cal
+from streamlit_tags import st_tags, st_tags_sidebar
 
 def app():
     # Initialize session state variables
